@@ -8,9 +8,16 @@ class Dashing.Countdown extends Dashing.Widget
     end_timestamp = Math.round( Date.parse($(@node).find(".more-info").html())/1000 )
     seconds_until_end = end_timestamp - current_timestamp
     if seconds_until_end < 0
-      @set('timeleft', "TIME UP!")
+      seconds_until_end = -seconds_until_end
+      d = Math.floor(seconds_until_end/86400)
+      h = Math.floor((seconds_until_end-(d*86400))/3600)
+      m = Math.floor((seconds_until_end-(d*86400)-(h*3600))/60)
+      s = seconds_until_end-(d*86400)-(h*3600)-(m*60)
+      @set('timeleft', @formatTime(m) + ":" + @formatTime(s))
+
+      #@set('timeleft', "00:00")
       #for i in [0..10] by 1
-      $(@node).fadeTo('fast', 0).fadeTo('fast', 1.0)
+      #$(@node).fadeTo('fast', 0).fadeTo('fast', 1.0)
     else
       d = Math.floor(seconds_until_end/86400)
       h = Math.floor((seconds_until_end-(d*86400))/3600)
