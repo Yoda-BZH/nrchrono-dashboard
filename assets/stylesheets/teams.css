@@ -1,0 +1,15 @@
+.team-bg-color-1 { background-color: #c71e1e !important; }
+.team-color-1 { color: #c71e1e !important; }
+.team-color-grad-1 { background-image: linear-gradient(to left, #c71e1e, rgba(255, 255, 255, 0) 30%); }
+.team-bg-color-2 { background-color: #e2ff00 !important; }
+.team-color-2 { color: #e2ff00 !important; }
+.team-color-grad-2 { background-image: linear-gradient(to left, #e2ff00, rgba(255, 255, 255, 0) 30%); }
+.team-bg-color-3 { background-color: #3928c7 !important; }
+.team-color-3 { color: #3928c7 !important; }
+.team-color-grad-3 { background-image: linear-gradient(to left, #3928c7, rgba(255, 255, 255, 0) 30%); }
+.team-bg-color-4 { background-color: #10d21a !important; }
+.team-color-4 { color: #10d21a !important; }
+.team-color-grad-4 { background-image: linear-gradient(to left, #10d21a, rgba(255, 255, 255, 0) 30%); }
+.team-bg-color-5 { background-color: #c820be !important; }
+.team-color-5 { color: #c820be !important; }
+.team-color-grad-5 { background-image: linear-gradient(to left, #c820be, rgba(255, 255, 255, 0) 30%); }
