@@ -12,8 +12,8 @@ class Dashing.Countdown extends Dashing.Widget
       #for i in [0..10] by 1
       $(@node).fadeTo('fast', 0).fadeTo('fast', 1.0)
     else
-      #d = Math.floor(seconds_until_end/86400)
-      #h = Math.floor((seconds_until_end-(d*86400))/3600)
+      d = Math.floor(seconds_until_end/86400)
+      h = Math.floor((seconds_until_end-(d*86400))/3600)
       m = Math.floor((seconds_until_end-(d*86400)-(h*3600))/60)
       s = seconds_until_end-(d*86400)-(h*3600)-(m*60)
       #if d >0
