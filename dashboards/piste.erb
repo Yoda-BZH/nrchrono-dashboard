@@ -1,28 +1,44 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  //Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+  Dashing.widget_base_dimensions = [410, 380]
+  Dashing.numColumns = 3
+});
+</script>
+<style>
+h1, h2 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: 0px 0px 10px #000000;
+}
+</style>
+
 <link rel="stylesheet" href="/assets/teams.css">
-<% content_for :title do %>My super sweet dashboard<% end %>
+<% content_for :title do %>Arrivée des coureurs<% end %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="clock" data-view="Clock" data-title="Clock" data-text=""></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-1">
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="team-bg-color-1">
       <div data-id="team1" data-color="" data-view="Countdown" data-title="Team 1"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-2">
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="team-bg-color-2">
       <div data-id="team2" data-color="" data-view="Countdown" data-title="Team 2"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-3">
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-3">
       <div data-id="team3" data-color="" data-view="Countdown" data-title="Team 3"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-4">
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="team-bg-color-4">
       <div data-id="team4" data-color="" data-view="Countdown" data-title="Team 4"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-5">
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="team-bg-color-5">
       <div data-id="team5" data-color="" data-view="Countdown" data-title="Team 5"></div>
     </li>
 
