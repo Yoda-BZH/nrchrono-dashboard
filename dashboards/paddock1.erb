@@ -1,0 +1,31 @@
+<script type='text/javascript'>
+//$(function() {
+//  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+//  //Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+//  Dashing.widget_base_dimensions = [410, 380]
+//  Dashing.numColumns = 3
+//});
+</script>
+<style>
+h1, h2 {
+    //-webkit-text-stroke-width: 2px;
+    //-webkit-text-stroke-color: #000000;
+    //text-shadow: 0px 0px 10px #000000;
+}
+</style>
+
+<link rel="stylesheet" href="/assets/teams.css">
+<% content_for :title do %>paddocks<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="sur-la-piste" data-view="List" data-unordered="true" data-title="Sur la piste" data-moreinfo=""></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="clock" data-view="Clock" data-title="Clock" data-text=""></div>
+    </li>
+
+
+  </ul>
+</div>
