@@ -18,6 +18,9 @@ class Dashing.Countdown extends Dashing.Widget
       #@set('timeleft', "00:00")
       #for i in [0..10] by 1
       #$(@node).fadeTo('fast', 0).fadeTo('fast', 1.0)
+      if $(@node).hasClass('warning')
+        $(@node).removeClass('warning')
+      $(@node).addClass('timeup')
     else
       d = Math.floor(seconds_until_end/86400)
       h = Math.floor((seconds_until_end-(d*86400))/3600)
@@ -30,7 +33,10 @@ class Dashing.Countdown extends Dashing.Widget
       #  @set('timeleft', d + " "+dayname+" " + @formatTime(h) + ":" + @formatTime(m) + ":" + @formatTime(s))
       #else
       @set('timeleft', @formatTime(m) + ":" + @formatTime(s))
-
+      $(@node).removeClass('timeup')
+      if seconds_until_end < 120
+        if $(@node).hasClass('warning') == false
+          $(@node).addClass('warning')
 
   formatTime: (i) ->
     if i < 10 then "0" + i else i

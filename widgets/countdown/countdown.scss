@@ -12,7 +12,9 @@ $background-color:  #dc5945;
 
   h2 { font-size: 3em;}
 
-  h1 { font-size: 7.5em;}
+  h1 { font-size: 7.5em;
+        //-webkit-animation-name: none;
+    }
 
   .countdown-time {
     margin-top: 10px;
@@ -26,4 +28,47 @@ $background-color:  #dc5945;
     left: 0;
     right: 0;
   }
+}
+
+    @-webkit-keyframes blinker {
+        from { opacity: 1.0; }
+        to { opacity: 0.1; }
+    }
+    @-webkit-keyframes background-position {
+        from { background-position: 0 0; }
+        to { background-position: 20% 20%; }
+    }
+
+.widget-countdown.timeup {
+    background-image: linear-gradient(
+        135deg,
+        transparent 25%,
+        black 25%,
+        black 50%,
+        transparent 50%,
+        transparent 75%,
+        black 75%,
+        black
+    );
+    background-size: 50px 50px;
+    //-webkit-animation: background-position 1s infinite alternate;
+    -webkit-animation-name: background-position;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: initial;
+    -webkit-animation-delay: initial;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: initial;
+    -webkit-animation-play-state: initial;
+    background-position: 0 0;
+}
+.widget-countdown.warning {
+
+    h1 {
+        -webkit-animation-name: blinker;
+        -webkit-animation-iteration-count: 100;
+        -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0.46, 0.78);
+        //-webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-duration: 1s;
+    }
 }
