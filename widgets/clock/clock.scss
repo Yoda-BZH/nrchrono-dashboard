@@ -10,5 +10,8 @@ $background-color:  #dc5945;
 
   background-color: $background-color;
   h1 { display: none; }
+  h2 { font-size: 65px; }
+}
+.widget-clock.big {
   h2 { font-size: 95px; }
 }
