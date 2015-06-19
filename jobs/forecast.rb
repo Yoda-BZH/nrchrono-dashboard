@@ -27,9 +27,10 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
     forecast_next_desc  = forecast["minutely"]["summary"]
     forecast_next_icon  = forecast["minutely"]["icon"]
   else
-    puts "Did not get minutely forecast data again"
-    forecast_next_desc  = "No data"
-    forecast_next_icon  = ""
+    #puts "Did not get minutely forecast data again"
+    #puts "Using hourly[1] instead of minutely"
+    forecast_next_desc  = forecast["hourly"]["data"][1]["summary"] + " - " + forecast["hourly"]["data"][1]["temperature"].round.to_s  + "°" #"No data"
+    forecast_next_icon  = forecast["hourly"]["data"][1]["icon"]    # ""
   end
   forecast_later_desc   = forecast["hourly"]["summary"]
   forecast_later_icon   = forecast["hourly"]["icon"]
