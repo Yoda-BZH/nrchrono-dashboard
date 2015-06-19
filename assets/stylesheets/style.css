@@ -1,3 +1,12 @@
 .forecast .updated-at {
     display: none;
 }
+
+.list-nomargin ul {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.list-nomargin.widget {
+    padding-left: 3px;
+    padding-right: 3px;
+}
