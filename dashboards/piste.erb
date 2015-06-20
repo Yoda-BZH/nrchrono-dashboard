@@ -2,7 +2,8 @@
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
   //Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
-  Dashing.widget_base_dimensions = [410, 380]
+  //Dashing.widget_base_dimensions = [410, 380]
+  Dashing.widget_base_dimensions = [520, 480]
   Dashing.numColumns = 3
 });
 </script>
@@ -16,7 +17,7 @@ h1, h2 {
 
 <link rel="stylesheet" href="/assets/teams.css">
 <% content_for :title do %>Arrivée des coureurs<% end %>
-<div class="gridster">
+<div class="gridster dashboard-piste">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div class="big" data-id="clock" data-view="Clock" data-title="Clock" data-text=""></div>

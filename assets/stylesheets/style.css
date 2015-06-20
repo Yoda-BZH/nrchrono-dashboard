@@ -10,3 +10,19 @@
     padding-left: 3px;
     padding-right: 3px;
 }
+
+.dashboard-piste h1 {
+}
+
+.dashboard-piste .widget-clock.big h2 {
+	font-size: 120px;
+}
+
+.dashboard-piste .widget-countdown h1 {
+	font-size: 4em;
+}	
+.dashboard-piste .widget-countdown h1 {
+	font-size: 8.5em;
+}
+
+
