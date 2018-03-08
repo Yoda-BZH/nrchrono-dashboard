@@ -5,9 +5,12 @@ class Dashing.Countdown extends Dashing.Widget
 
   startCountdown: =>
     current_timestamp = Math.round(new Date().getTime()/1000)
-    nodeValue = $(@node).find(".more-info").html().replace('-', '/')
+    nodeValue = $(@node).find(".more-info").html().replace('-', '/').replace('-', '/')
+    #console.log('more info: ' + $(@node).find(".more-info").html() );
+    #console.log('got node value for ' + @node + ' : ' + nodeValue  )
     if nodeValue == ""
-      @set('timeleft', '--:--')
+      #@set('timeleft', '--:--')
+      return
     else
       end_timestamp = Math.round( Date.parse(nodeValue)/1000 )
       seconds_until_end = end_timestamp - current_timestamp

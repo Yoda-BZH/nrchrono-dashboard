@@ -2,6 +2,8 @@
 // Sass declarations
 // ----------------------------------------------------------------------------
 $background-color:  #dc5945;
+$rayure-color: #FFFFFF;
+//A8A8A8;
 
 // ----------------------------------------------------------------------------
 // Widget-clock styles
@@ -43,12 +45,12 @@ $background-color:  #dc5945;
     background-image: linear-gradient(
         135deg,
         transparent 25%,
-        black 25%,
-        black 50%,
+        $rayure-color 25%,
+        $rayure-color 50%,
         transparent 50%,
         transparent 75%,
-        black 75%,
-        black
+        $rayure-color 75%,
+        $rayure-color
     );
     background-size: 50px 50px;
     //-webkit-animation: background-position 1s infinite alternate;
