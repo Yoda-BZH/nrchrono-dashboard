@@ -9,9 +9,15 @@ $(function() {
 </script>
 <style>
 h1, h2 {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000000;
-    text-shadow: 0px 0px 10px #000000;
+    /*-webkit-text-stroke-width: 2px;*/
+    /*-webkit-text-stroke-color: #000000;*/
+    /*text-shadow: 0px 0px 10px #000000;*/
+    color: black;
+    font-weight: bold;
+    font-size: 9.2em;
+}
+.more-info {
+    color: black;
 }
 </style>
 
@@ -20,21 +26,21 @@ h1, h2 {
 <div class="gridster dashboard-piste">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div class="big" data-id="clock" data-view="Clock" data-title="Clock" data-text=""></div>
+      <div style="background-color: white;" class="big" data-id="clock" data-view="Clock" data-title="Clock" data-text=""></div>
     </li>
 
-    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="team-bg-color-1">
-      <div data-id="team1" data-color="" data-view="Countdown" data-title="Ptits LU"></div>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1" class="team-color-double2-1">
+      <div data-id="team1" data-color="" data-view="Countdown" data-title="Belem"></div>
     </li>
 
-    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="team-bg-color-2">
-      <div data-id="team2" data-color="" data-view="Countdown" data-title="BN"></div>
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1" class="team-color-double2-2">
+      <div data-id="team2" data-color="" data-view="Countdown" data-title="Maillé-Brézé"></div>
     </li>
 
-    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="team-bg-color-3">
-      <div data-id="team3" data-color="" data-view="Countdown" data-title="Princes"></div>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1" class="team-color-double2-3">
+      <div data-id="team3" data-color="" data-view="Countdown" data-title="Lechalas"></div>
     </li>
-
+<!--
     <li data-row="2" data-col="2" data-sizex="1" data-sizey="1" class="team-bg-color-4">
       <div data-id="team4" data-color="" data-view="Countdown" data-title="Duchesses"></div>
     </li>
@@ -42,6 +48,10 @@ h1, h2 {
     <li data-row="2" data-col="3" data-sizex="1" data-sizey="1" class="team-bg-color-5">
       <div data-id="team5" data-color="" data-view="Countdown" data-title="NART"></div>
     </li>
-
+-->
+    <li data-row="2" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="map" data-view="Map" data-title="Map" data-type="road" data-color=""></div>
+    </li>
   </ul>
 </div>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBATAtO3o1pgNVvZqdsZOiRRVgdcvcKk7I&sensor=false&libraries=visualization"></script>
